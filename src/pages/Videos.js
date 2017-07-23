@@ -21,11 +21,11 @@ class Videos extends Component {
             layout: ' col-lg-offset-1',
             cards: {
                 card1: {
-                    title: '수미사 홍보영상',
+                    title: '더선에듀 홍보영상',
                     videoUrl: 'https://youtube.com/embed/pjVYWiuw3EQ'
                 },
                 card2: {
-                    title: '수미사 강의 샘플',
+                    title: '더선에듀 강의 샘플',
                     videoUrl:'https://www.youtube.com/embed/r-9CFI8pyFQ'
                 }
             }
@@ -58,7 +58,6 @@ class Videos extends Component {
                             <CardActions>
                                 <FlatButton label="동영상 카테고리" onTouchTap={this.handleToggle}/>
                             </CardActions>
-
                         </Card>
                     </div>
                     <div className="video-card">

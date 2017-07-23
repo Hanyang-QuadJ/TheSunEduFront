@@ -9,7 +9,7 @@ import {Link} from 'react-router-dom'
 import NavigationClose from 'material-ui/svg-icons/navigation/close';
 import IconButton from 'material-ui/IconButton';
 
-import mainPageLogo from './img/mainPageLogo.png'
+import headerLogo from './img/headerLogo.png'
 
 const styles = {
     appBar: {
@@ -59,13 +59,19 @@ class Header extends Component {
 
         return(
             <div class="header">
-                <AppBar title={<img src={mainPageLogo} className="title-img" />}
+                <AppBar title={<img src={headerLogo} className="title-img" />}
                         onLeftIconButtonTouchTap={this.handleToggle}
                         onTitleTouchTap={<Link to="/"/>}
                         style={styles.appBar}>
-                    <FlatButton label="소개 영상" containerElement={<Link to="video"/>} style={{height: 50, margin: 0}}/>
-                    <FlatButton label="강사진" containerElement={<Link to="teacher" />} style={{height: 50, margin: 0}}/>
-                    <FlatButton label="커리큘럼" containerElement={<Link to="curriculum" />} style={{height: 50, margin: 0}}/>
+                    <FlatButton label="소개 영상"
+                                containerElement={<Link to="video"/>}
+                                style={{height: 50, margin: 0, paddingTop: 8}}/>
+                    <FlatButton label="강사진"
+                                containerElement={<Link to="teacher" />}
+                                style={{height: 50, margin: 0, paddingTop: 8}}/>
+                    <FlatButton label="커리큘럼"
+                                containerElement={<Link to="curriculum" />}
+                                style={{height: 50, margin: 0, paddingTop: 8}}/>
                 </AppBar>
 
                 <Drawer width={250}

@@ -19,7 +19,7 @@ const muiTheme = getMuiTheme({
     },
     flatButton: {
         fontSize: 16,
-        textColor: '#463831'
+        textColor: '#ffffff'
     }
 });
 

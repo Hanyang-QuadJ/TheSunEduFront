@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
-import theSunEduMainImg from '../img/theSunEduMainImg.jpeg'
-import theSunImg2 from '../img/theSunImg2.jpeg'
+import mainImg1 from '../img/mainImg1.jpeg'
+import mainImg2 from '../img/mainImg2.jpeg'
 
 class MainPage extends Component {
 
@@ -21,13 +21,13 @@ class MainPage extends Component {
 
                         <div className="carousel-inner" role="listbox">
                             <div className="item active">
-                                <img src={theSunEduMainImg}/>
+                                <img src={mainImg1}/>
                                 <div className="carousel-caption">
                                     <h3>Carousel caption</h3>
                                 </div>
                             </div>
                             <div className="item">
-                                <img src={theSunImg2}/>
+                                <img src={mainImg2}/>
                             </div>
                         </div>
 
