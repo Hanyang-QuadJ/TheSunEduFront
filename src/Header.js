@@ -27,6 +27,11 @@ const styles = {
         margin: 0,
         width: 150
     },
+    tabButton: {
+        height: 50,
+        margin: 0,
+        paddingTop: 8
+    }
 
 };
 
@@ -65,13 +70,13 @@ class Header extends Component {
                         style={styles.appBar}>
                     <FlatButton label="소개 영상"
                                 containerElement={<Link to="video"/>}
-                                style={{height: 50, margin: 0, paddingTop: 8}}/>
+                                style={styles.tabButton}/>
                     <FlatButton label="강사진"
                                 containerElement={<Link to="teacher" />}
-                                style={{height: 50, margin: 0, paddingTop: 8}}/>
+                                style={styles.tabButton}/>
                     <FlatButton label="커리큘럼"
                                 containerElement={<Link to="curriculum" />}
-                                style={{height: 50, margin: 0, paddingTop: 8}}/>
+                                style={styles.tabButton}/>
                 </AppBar>
 
                 <Drawer width={250}

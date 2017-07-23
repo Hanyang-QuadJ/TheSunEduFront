@@ -8,8 +8,11 @@ class Curriculum extends Component {
 
     render() {
         return (
-            <div className="curriculum-page">
-                <p>curriculum page</p>
+            <div className="row curriculum-page">
+                <div className="curriculum-head col-md-8 col-md-offset-2 margin-top-appbar">
+                    <p>curriculum page</p>
+                </div>
+
             </div>
         )
     }

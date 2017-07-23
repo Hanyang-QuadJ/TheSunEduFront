@@ -6,9 +6,10 @@ import Menu from 'material-ui/Menu';
 import AppBar from 'material-ui/AppBar'
 import MenuItem from 'material-ui/MenuItem';
 import Drawer from 'material-ui/Drawer'
-import {Link} from 'react-router-dom'
+import Divider from 'material-ui/Divider'
 import NavigationClose from 'material-ui/svg-icons/navigation/close';
 import IconButton from 'material-ui/IconButton';
+import {Link} from 'react-router-dom'
 
 class Videos extends Component {
 
@@ -25,7 +26,7 @@ class Videos extends Component {
                     videoUrl: 'https://youtube.com/embed/pjVYWiuw3EQ'
                 },
                 card2: {
-                    title: '더선에듀 강의 샘플',
+                    title: '더선에 강의 샘플',
                     videoUrl:'https://www.youtube.com/embed/r-9CFI8pyFQ'
                 }
             }
@@ -85,8 +86,10 @@ class Videos extends Component {
                                 onLeftIconButtonTouchTap={this.handleToggle}
                                 iconElementLeft={<IconButton><NavigationClose /></IconButton>}/>
                         <MenuItem><Link to="/">홈으로</Link></MenuItem>
+                        <Divider/>
                         <MenuItem>강의</MenuItem>
                         <MenuItem>소개 영상</MenuItem>
+                        <MenuItem>학원 영상</MenuItem>
                     </Drawer>
 
                 </div>

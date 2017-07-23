@@ -36,7 +36,11 @@
 }
 
 .main-page {
-  background-color: #0f0f0f;
+  background-color: #3c3f41;
+}
+
+.main-image {
+  margin-top: 50px;
 }
 
 .main-content-text {
@@ -48,6 +52,13 @@
 }
 
 .video-card {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin: 15px;
+}
+
+.teacher-page {
+  background-color: #3c3f41;
+}
+
+.teacher-head {
+  color: #f1f1f1;
 }
